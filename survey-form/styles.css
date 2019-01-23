@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Sarabun');
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
+* {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  background-color: #a9d7d1; 
+  font-size: 16px;
+  font-family: 'Sarabun', sans-serif;
+}
+.mandatory {
+  color: red;
+}
+#title {
+  text-align: center;
+  font-size: 2em;
+}
+.form-body {
+  background-color: white;
+  width: 75%;
+  margin: 0 auto 50px;
+  border-radius: 5px;
+  font-family: 'Lato', sans-serif;
+}
+#description {
+  text-align: center;
+  padding: 30px 20px 0;
+}
+.row {
+  width: 100%;
+  display: flex;
+  padding: 10px;
+}
+.col-left, .col-right {
+  width: 50%;
+  padding: 5px;
+}
+.col-left {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.col-left label {
+  margin-right: 20px;
+}
+.col-right {
+  display: flex;
+  justify-content: flex-start;
+}
+.col-right input, .col-right select, .col-right textarea {
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+  padding: 5px;
+  width: 250px;
+}
+#radios, #checks {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.col-right label input {
+  width: 25px;
+}
+.col-right textarea {
+  height:50px;
+  resize:vertical;
+}
+#wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#submit {
+  background-color: #59ace0;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  height: 40px;
+  width: 96px;
+  margin: 10px auto 30px;
+  border: 0px solid;
+}
+button:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 832px) {
+  .col-right input, .col-right select {
+    width: 80%;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+}

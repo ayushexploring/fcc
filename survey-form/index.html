@@ -3,9 +3,88 @@
 <head>
   <title>survey form</title>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <h1>Hello</h>
+  <h1 id="title">Secret Intelligence Services</h1>
+  <div class="form-body">
+    <p id="description">Do you want to be the next Double-O agent? Do you have the guts to carry out secret covert operations overseas in disguise?</p>
+    <form id="survey-form">
+      <div class="row">
+        <div class="col-left">
+          <label id="name-label"><span class="mandatory">*</span>Name :</label>
+        </div>
+        <div class="col-right">
+          <input id="name" type="text" name="name" placeholder="Enter your name" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-left">
+          <label id="email-label"><span class="mandatory">*</span>Email :</label>
+        </div>
+        <div class="col-right">
+          <input id="email" type="email" name="email" placeholder="Enter your email" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-left">
+          <label id="number-label"><span class="mandatory">*</span>Age :</label>
+        </div>
+        <div class="col-right">
+          <input id="number" type="number" min="25" max="35" name="age" placeholder="Enter your age" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-left">
+          <label><span class="mandatory">*</span>Which option best describes you currently? :</label>
+        </div>
+        <div class="col-right">
+          <select id="dropdown" name="currentPos" class="dropdown">
+            <option value="" disabled=""isabled>Select an option</option>
+            <option value="job">Full Time Job</option>
+            <option value="unemployed">Unemployed</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-left">
+          <label><span class="mandatory">*</span>Are you applying for elite category? :</label>
+        </div>
+        <div class="col-right" id="radios">
+          <label><input name="radio-buttons" value="1" type="radio">Definitely</label>
+          <label><input name="radio-buttons" value="2" type="radio">Maybe</label>
+          <label><input name="radio-buttons" value="3" type="radio">No</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-left">
+          <label><span class="mandatory">*</span>Select role of your interest? :</label>
+        </div>
+        <div class="col-right" id="checks">
+          <label><input name="check-boxes" value="1" type="checkbox">Field Officer</label>
+          <label><input name="check-boxes" value="2" type="checkbox">Weapon Specialist</label>
+          <label><input name="check-boxes" value="3" type="checkbox">Medical Personnel</label>
+          <label><input name="check-boxes" value="4" type="checkbox">Technical Officer</label>
+          <label><input name="check-boxes" value="5" type="checkbox">Vehicular Expertise</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-left">
+          <label>Comments (if any) :</label>
+        </div>
+        <div class="col-right">
+          <textarea id="comments" name="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+      </div>
+      <div id="wrapper">
+        <button id="submit" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>
