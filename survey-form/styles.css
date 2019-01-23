@@ -92,4 +92,8 @@ button:hover {
   h1 {
     font-size: 1.5em;
   }
+  .form-body {
+    margin: 0 1auto;
+    width: 100%;
+  }
 }
