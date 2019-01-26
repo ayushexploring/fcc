@@ -7,9 +7,58 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <header></header>
-  <main></main>
-  <footer></footer>
+  <header id="header">
+    <div class="header-left">
+      <a href="#header"><img id="header-img" src="https://www.thriftysigns.com/wp-content/uploads/2018/05/Stark-Industries-Iron-Man.jpg"></a>
+      <h1>STARK INDUSTRIES</h1>
+    </div>
+    <div class="header-right">
+      <nav id="nav-bar">
+        <ul>
+          <li class="nav-link-li"><a href="#about-us" class="nav-link">About Us</a></li>
+          <li class="nav-link-li"><a href="#products" class="nav-link">Products</a></li>
+          <li class="nav-link-li"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="body-bg">
+    <section id="about-us">
+      <div class="video-div">
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/r50WDvCL5aA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="container">
+        <div class="row">
+        <h3><u>About Us</u></h3>
+        <p>Stark Industries was founded by Howard Stark during the early twentieth century, a great pioneer in different types of technology and constantly helping the United States Armed Forces with different and innovative weapons, helping the government to create the Super Soldier Serum. Years later, he created an Arc Reactor along with Anton Vanko, a source which provided free, pure and efficient energy for Stark Industries' main plant. After the death of Howard in 1991 at the hands of HYDRA, the company was inherited by Tony Stark, with the help of Obadiah Stane, although Stane was appointed interim CEO immediately after Howard's death before Tony could officially assume the position of CEO.Stark was kidnapped by the terrorist organization known as the Ten Rings in Afghanistan, and developed a suit of armor powered with a miniaturized Arc Reactor to escape captivity. Upon his return to Malibu, he decided the company would no longer produce weaponry, as he discovered his captors possessed illegal Stark tech. Stark further developed his armor to create new models, such as the Iron Man Armor: Mark III and started looking for and destroying stolen Stark tech, which he later discovered Obadiah Stane was selling behind his back. Stark faced Stane, who had created his own suit of armor, and killed him in battle. Six months later, Stark reinaugurated the Stark Expo, and was attacked by Anton Vanko's son Ivan, who thought Howard Stark was responsible for Anton's misery and death, although Anton was deported because he tried to use the reactor to his own profit. Though panned by critics such as Bill O'Reilly, Stark appointed Pepper Potts as leader of Stark Industries. Stark later opened a new base for Stark Industries in New York City, building the Stark Tower, which was powered by a new prototype Arc Reactor inside the tower. Meanwhile, Potts procured permits to build a Stark Tower in Washington, D.C. Dissatisfied with his previous status as "Iron Man's bodyguard", Happy Hogan was hired as head of security in Stark Industries Headquarters. Following the downfall of S.H.I.E.L.D. and the hiring of Maria Hill, Stark Industries made privatized security a part of its services. A bomb manufactured by Stark Industries landed in the apartment building of the Maximoff family, failing to detonate but still killing the parents of twins Wanda and Pietro Maximoff, causing them to hate Tony Stark and initially help Ultron. Sometime after the Battle of Sokovia, Stark Industries announced new scholarships for promising students from urban city schools.</p>
+        </div>
+      </div>
+    </section>
+    <section id="products">
+      <div class="container">
+        <div class="row">
+          <h3><u>Products</u></h3><br>
+          <p>Iron Suit</p>
+          <img src="https://i.kinja-img.com/gawker-media/image/upload/s--CflNbBlc--/c_scale,fl_progressive,q_80,w_800/jhk8pgdke8yinui9mexz.jpg">
+          <p>Arc Reactor</p>
+          <img src="https://ae01.alicdn.com/kf/HTB1f2kLQpXXXXcIaXXXq6xXFXXXx/The-Avengers-Iron-Man-Mk43-MK6-Arc-Reactor-with-LED-Light-Tony-Stark-Arc-Reactor.jpg_640x640.jpg">
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+        <h3><u>Contact</u></h3>
+        <p>Stark Towers<br>200 Park Avenue<br>New York, United States of America<br><br>Wanna get in touch with Mr.Tony Stark? Leave your details below.</p>
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+          <label>Email</label>
+          <input id="email" type="email" name="email" placeholder="enter your email">
+          <input id="submit" type="submit" form="form" value="Submit">
+        </form>
+        </div>
+      </div>
+    </section>
+  </main>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
