@@ -1,15 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Ayush Verma - Full Stack Web Developer</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <title>Ayush Verma - Full Stack Web Developer</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 <body>
-  <h1>portfolio</h1>
+  <!-- NAVBAR -->
+  <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item text-center">
+          <a class="nav-link" href="#welcome-section">Home</a>
+        </li>
+        <li class="nav-item text-center">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item text-center">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- /NAVBAR -->
+  <!-- WELCOME SECTION -->
+  <div class="container-fluid" id="welcome-section">
+    <h1 class="text-center">Hey i'am Ayush.</h1>
+    <h5 class="text-center">a web developer</h5>
+  </div>
+  <!-- /WELCOME SECTION -->
+  <!-- PROJECTS SECTION -->
+  <div class="container" id="projects">
+    <h4 class="text-center">These are some of my projects..</h4>
+    <div class="row">
+      <div class="col-md-6 project text-center">
+        <a href="https://ayushexploring.github.io/fcc/tribute-page/" class="project-tile" target="_blank">
+          <img src="images/tribute.png" class="project-pic">
+          <h5 class="text-center">Tribute Page</h5>
+        </a>
+      </div>
+      <div class="col-md-6 project text-center">
+        <a href="https://ayushexploring.github.io/fcc/landing-page/" class="project-tile" target="_blank">
+          <img src="images/landing.png" class="project-pic">
+          <h5 class="text-center">Landing Page</h5>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 project text-center">
+        <a href="https://ayushexploring.github.io/fcc/survey-form/" class="project-tile" target="_blank">
+          <img src="images/survey.png" class="project-pic">
+          <h5 class="text-center">Survey Form</h5>
+        </a>
+      </div>
+      <div class="col-md-6 project text-center">
+        <a href="https://ayushexploring.github.io/fcc/documentation-page/" class="project-tile" target="_blank">
+          <img src="images/documentation.png" class="project-pic">
+          <h5 class="text-center">Documentation Page</h5>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 project text-center">
+        <a href="https://ayushexploring.github.io/calculator/" class="project-tile" target="_blank">
+          <img src="images/calculator.png" class="project-pic">
+          <h5 class="text-center">Calculator</h5>
+        </a>
+      </div>
+      <div class="col-md-6 project text-center">
+        <a href="https://ayushexploring.github.io/ping-pong/" class="project-tile" target="_blank">
+          <img src="images/ping-pong.png" class="project-pic">
+          <h5 class="text-center">Ping Pong</h5>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- /PROJECTS SECTION -->
+  <!-- CONTACT SECTION -->
+  <div class="container-fluid" id="contact">
+    <h1 class="text-center">Contact me</h1>
+    <div class="row justify-content-center">
+      <div class="col-md-1.5 col-sm-1.5">
+        <a href="#contact">
+          <span>
+            <i class="fab fa-facebook"></i>
+          </span>
+        </a>
+      </div>
+      <div class="col-md-1.5 col-sm-1.5">        
+        <a href="https://github.com/ayushexploring" id="profile-link" target="_blank">
+          <span>
+            <i class="fab fa-github"></i>
+          </span>
+        </a>
+      </div>
+      <div class="col-md-1.5 col-sm-1.5">
+        <a href="#contact">
+          <span>
+            <i class="fab fa-linkedin"></i>
+          </span>
+        </a>
+      </div>
+      <div class="col-md-1.5 col-sm-1.5">
+        <a href="https://twitter.com/ayushexploring" target="_blank">
+          <span>
+            <i class="fab fa-twitter-square"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- /CONTACT SECTION -->
+  <script src="js/bootstrap.js"></script>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>

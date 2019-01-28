@@ -1,0 +1,50 @@
+html, body {
+  scroll-behavior: smooth;
+}
+#welcome-section {
+	background: #e0ebe8;
+  width: 100%;
+  height: 100vh;
+}
+#welcome-section > h1 {
+  position: relative;
+  top: 40%;
+}
+#welcome-section > h5 {
+  position: relative;
+  top: 40%;
+}
+#projects > h4 {
+  margin-top: 50px;
+}
+.project {
+  padding: 50px;
+}
+.project-tile {
+  text-decoration: none;
+}
+.project-pic {
+  width: 300px;
+  border: 5px solid lightblue;
+}
+.project h5 {
+  width: 300px;
+  border: 5px solid lightblue;
+  margin: 0 auto;
+}
+#contact {
+  background-color: #C8F7C5;
+  height: 40vh;
+}
+#contact > h1 {
+  padding: 40px;
+}
+i {
+  font-size: 4em;
+  margin: 20px;
+}
+@media screen and (max-width: 768px) {
+  * {
+    overflow-x: hidden;
+  }
+}
